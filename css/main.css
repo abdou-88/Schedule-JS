@@ -1,0 +1,406 @@
+#ScheduleCont{
+transition: 0.3s box-shadow ease;
+max-width: 100%;
+
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.ScheduleCont:hover {
+  box-shadow: 0 12px 23px rgba(0, 0, 0, 0.23), 0 10px 10px rgba(0, 0, 0, 0.19);
+}
+
+#overlayLoading {
+  padding-top: 20%;
+  text-align: center;
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+
+.Shiftcolors{
+    padding: 4px;
+    border :solid 1px;
+    text-align: center;
+    width: 25%;
+    font-weight: bold;
+}
+.Spancolor{
+    width: 40px;
+    display: inline-block;
+    
+
+}
+.pto{
+     background-color: red;
+}
+.BNholiday{
+background-color: yellow;
+
+}
+.Unshift{
+    background-color: green;
+}
+.ScikLeave{
+    background-color: #FFA500;
+}
+
+
+input[type="text"]:disabled {
+  background: #8bd1ff;
+  color: #000000;
+  border: #000000 1px solid ;
+}
+
+
+.NavButton{
+
+  border: none;
+  color: white;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color:  #242424;
+  color: white;
+  
+}
+
+.NavButton:hover {
+  background-color: #0C9ED9;
+  
+  
+}
+.hourscounterdiv{
+	width: 80px;
+	height: 5px;
+	background: linear-gradient(to right, #00ffff 0%, #242424);
+}
+.hourscounterdivRed{
+	width: 80px;
+	height: 5px;
+	background: linear-gradient(to right, #f70d0d 0%, #242424 );
+}
+
+#dp .scheduler_default_cellparent,
+      .scheduler_default_cell.scheduler_default_cell_business.scheduler_default_cellparent {
+        background: #f3f3f3;
+        
+      }
+.scheduler_default_timeheadergroup_inner {
+	font-size: xx-large;
+	
+}
+
+.scheduler_default_corner_inner{
+	background: url(https://www.spjnews.com/wp-content/uploads/2017/09/Catalent-600x330.jpg) top left;
+	background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+ .scheduler_default_corner div:nth-of-type(2) {
+        display: none !important;
+      }
+
+.scheduler_default_main 
+{
+	border: 1px solid #aaaaaa;
+}
+
+.scheduler_default_main, .scheduler_default_main td 
+{
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+
+.scheduler_default_main 
+{
+    border: 1px solid #000000;
+}
+.scheduler_default_main, .scheduler_default_main td 
+{
+    font-family: Tw Cen MT;
+    font-size: 15px;
+}
+.scheduler_default_event { 
+    border-radius: 4px;
+}
+.scheduler_default_event { 
+    color: #000000;
+}
+
+.scheduler_default_event_inner { 
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: 0px;
+    overflow: hidden;
+    background-color: #44a2c9;
+    background: linear-gradient(to bottom, #63b2d2 0%, #338cb1);
+    border-radius: 4px;
+    padding-top: 8px;
+    border: 1px solid #000000;
+    align-items: center;
+	text-align: center;
+	font-size: 13px;
+		
+}
+.scheduler_default_timeheadergroup,
+.scheduler_default_timeheadercol
+{
+    color: #ffffff;
+    background: #363636;
+    background: linear-gradient(to bottom, #484848 0%, #242424);
+}
+.scheduler_default_rowheader,
+.scheduler_default_corner
+{
+    color: #ffffff;
+    background: #363636;
+    background: linear-gradient(to right, #484848 0%, #242424);
+}
+.scheduler_default_rowheader_inner {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+    border-right: 1px solid #e0e0e0;
+    padding: 11px;
+    display: flex;
+    align-items: center;
+}
+
+.scheduler_default_timeheadergroup_inner,
+.scheduler_default_timeheadercol_inner
+{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    border-right: 1px solid #000000;
+    padding: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.scheduler_default_timeheadergroup_inner {
+    border-bottom: 1px solid #000000;
+}
+.scheduler_default_divider,
+.scheduler_default_splitter,
+.scheduler_default_divider_horizontal,
+.scheduler_default_resourcedivider 
+{
+    background-color: #000000;
+}
+.scheduler_default_matrix_vertical_line,
+.scheduler_default_matrix_horizontal_line 
+{
+    background-color: #e8e8e8;
+}
+.scheduler_default_cell 
+{
+    background: #b8b8b8;
+}
+.scheduler_default_cell.scheduler_default_cell_business 
+{
+    background: #ffffff;
+}
+.scheduler_default_message 
+{
+    padding: 10px;
+    opacity: 0.9;
+    color: #ffffff;
+    background: #ffae36;
+    background: linear-gradient(to bottom, #ffe5be 0%, #ad6700);
+}
+.scheduler_default_shadow_inner 
+{
+    background-color: #666666;
+    opacity: 0.5;
+    height: 100%;
+    border-radius: 4px;
+}
+.scheduler_default_matrix_vertical_break 
+{
+    background-color: #999;
+}
+.scheduler_default_cellparent {
+}
+.scheduler_default_tree_image_no_children {
+}
+.scheduler_default_tree_image_expand {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><path d='M 1.5 0.5 L 6.5 5 L 1.5 9.5' style='fill:none;stroke:%23999999;stroke-width:2;stroke-linejoin:round;stroke-linecap:butt' /></svg>");
+}
+.scheduler_default_tree_image_collapse {
+    background-image: url("data:image/svg+xml;utf8,<svg width='10' height='10' xmlns='http://www.w3.org/2000/svg'><path d='M 0.5 1.5 L 5 6.5 L 9.5 1.5' style='fill:none;stroke:%23999999;stroke-width:2;stroke-linejoin:round;stroke-linecap:butt' /></svg>");
+}
+.scheduler_default_columnheader 
+{
+}
+.scheduler_default_columnheader_inner {
+   
+}
+.scheduler_default_columnheader_cell {
+}
+.scheduler_default_columnheader_splitter { box-sizing: border-box; border-right: 1px solid #c0c0c0; }
+.scheduler_default_columnheader_splitter:hover { background-color: #c0c0c0; }
+.scheduler_default_columnheader_cell_inner {
+    position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; padding: 2px; display: flex; align-items: center;
+}
+.scheduler_default_timeheader_float {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.scheduler_default_timeheader_float_inner {
+    padding: 11px;
+}
+.scheduler_default_event_float {
+    display: flex;
+    align-items: center;
+}
+.scheduler_default_event_float_inner {
+    padding: 3px 2px 2px 7px;
+    padding-left: 9px;
+    /*top: -2px;*/
+    position: relative;    
+}
+.scheduler_default_event_float_inner:after {
+    content:"";
+    border-color: transparent #000000 transparent transparent;
+    border-style:solid;
+    border-width:5px;
+    width:0;
+    height:0;
+    position:absolute;
+    top:5px;
+    left:-4px;
+}
+.scheduler_default_event_move_left {
+    box-sizing: border-box; 
+    padding: 2px;
+    border: 1px solid #ccc;
+    background: #fff;
+    background: linear-gradient(to bottom, #ffffff 0%, #eeeeee);
+    display: flex;
+    align-items: center;
+}
+.scheduler_default_event_move_right {
+    box-sizing: border-box; 
+    padding: 2px;
+    border: 1px solid #ccc;
+    background: #fff;
+    background: linear-gradient(to bottom, #ffffff 0%, #eeeeee);
+    display: flex;
+    align-items: center;
+}
+.scheduler_default_event_delete {
+    background: url("data:image/svg+xml;utf8,<svg width='12' height='12' xmlns='http://www.w3.org/2000/svg'><path d='M 0.5 0.5 L 11.5 11.5 M 0.5 11.5 L 11.5 0.5' style='fill:none;stroke:%23464646;stroke-width:3;stroke-linejoin:round;stroke-linecap:butt' /></svg>") no-repeat center center; opacity: 0.6; cursor: pointer;
+    cursor: pointer;
+    opacity: 0.6;
+}
+.scheduler_default_event_delete:hover {
+    opacity: 1;
+}
+.scheduler_default_rowmove_handle { background-repeat: no-repeat; background-position: center center; background-color: #ccc; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAKCAYAAACT+/8OAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjExR/NCNwAAAClJREFUGFdj+P//P4O9vX2Bg4NDP4gNFgBytgPxebgAMsYuQGMz/jMAAFsTZDPYJlDHAAAAAElFTkSuQmCC); cursor: move; }
+.scheduler_default_rowmove_source { background-color: black; opacity: 0.2; }
+.scheduler_default_rowmove_position_before, .scheduler_default_rowmove_position_after { background-color: #999; height: 2px; }
+.scheduler_default_rowmove_position_child { margin-left: 10px; background-color: #999; height: 2px; }
+.scheduler_default_rowmove_position_child:before { content: '+'; color: #999; position: absolute; top: -8px; left: -10px; }
+.scheduler_default_rowmove_position_forbidden { background-color: red; height: 2px; margin-left: 10px; }
+.scheduler_default_rowmove_position_forbidden:before { content: 'x'; color: red; position: absolute; top: -8px; left: -10px; }
+.scheduler_default_link_horizontal { border-bottom-style: solid; border-bottom-color: red }
+.scheduler_default_link_vertical { border-right-style: solid; border-right-color: red }
+.scheduler_default_link_arrow_right:before { content: ''; border-width: 6px; border-color: transparent transparent transparent red; border-style: solid; width: 0px; height:0px; position: absolute; }
+.scheduler_default_link_arrow_left:before { content: ''; border-width: 6px; border-color: transparent red transparent transparent; border-style: solid; width: 0px; height:0px; position: absolute; }
+.scheduler_default_link_arrow_down:before { content: ''; border-width: 6px; border-color: red transparent transparent transparent; border-style: solid; width: 0px; height:0px; position: absolute; }
+.scheduler_default_link_arrow_up:before { content: ''; border-width: 6px; border-color: transparent transparent red transparent; border-style: solid; width: 0px; height:0px; position: absolute; }
+.scheduler_default_shadow_overlap .scheduler_default_shadow_inner { background-color: red; }
+.scheduler_default_overlay { background-color: gray; opacity: 0.5; }
+.scheduler_default_main .scheduler_default_event_group { box-sizing: border-box; font-size:12px; color:#666; padding:2px; overflow:hidden; border:1px solid #ccc; background-color: #fff; display: flex; align-items: center; white-space: nowrap; }
+.scheduler_default_header_icon { box-sizing: border-box; border: 1px solid #000000; background-color: #363636; color: #ffffff; }
+.scheduler_default_header_icon:hover { background-color: #242424; }
+.scheduler_default_header_icon_hide:before { content: '\00AB'; }
+.scheduler_default_header_icon_show:before { content: '\00BB'; }
+.scheduler_default_rowheader.scheduler_default_rowheader_selected { background-color: #aaa; background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent); background-size: 35px 35px; }
+.scheduler_default_cell.scheduler_default_cell_business.scheduler_default_cell_selected, .scheduler_default_cell.scheduler_default_cell_selected { background-color: #ccc; background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent); background-size: 20px 20px; }
+.scheduler_default_row_new .scheduler_default_rowheader_inner { cursor: text; background-position: 0px 50%; background-repeat: no-repeat; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABUSURBVChTY0ACslAaK2CC0iCQDMSlECYmQFYIAl1AjFUxukIQwKoYm0IQwFCMSyEIaEJpMMClcD4Qp0CYEIBNIUzRPzAPCtAVYlWEDgyAGIdTGBgAbqEJYyjqa3oAAAAASUVORK5CYII=); }
+.scheduler_default_row_new .scheduler_default_rowheader_inner:hover { background: white; }
+.scheduler_default_rowheader textarea { padding: 3px; }
+.scheduler_default_rowheader_scroll { cursor: default; }
+.scheduler_default_shadow_forbidden .scheduler_default_shadow_inner { background-color: red; }
+.scheduler_default_event_moving_source { opacity: 0.5; }
+.scheduler_default_linkpoint { background-color: white; border: 1px solid gray; border-radius: 5px; }
+.scheduler_default_linkpoint.scheduler_default_linkpoint_hover { background-color: black; }
+.scheduler_default_event.scheduler_default_event_version { overflow:hidden; background-color: #cfdde8; background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent); background-size: 20px 20px; }
+.scheduler_default_crosshair_vertical, .scheduler_default_crosshair_horizontal, .scheduler_default_crosshair_left, .scheduler_default_crosshair_top { background-color: gray; opacity: 0.2; }
+.scheduler_default_link_dot { border-radius: 10px; background-color: red; }
+.scheduler_default_task_milestone  { position:absolute;top:16%;left:16%;right:16%;bottom:16%; background: #38761d; border: 0px none; transform: rotate(45deg); filter: none; }
+.scheduler_default_event_left { white-space: nowrap; padding-top: 5px; color: #666; cursor: default; }
+.scheduler_default_event_right { white-space: nowrap; padding-top: 5px; color: #666; cursor: default; }
+.scheduler_default_selectionrectangle { background-color: #0000ff; border: 1px solid #000033; opacity: 0.4; }
+.scheduler_default_link_shadow { border:1px solid black; }
+.scheduler_default_link_shadow_circle { background-color:black; }
+.scheduler_default_link_hover { box-shadow: 0px 0px 2px 2px rgba(255, 0, 0, 0.3); }
+.scheduler_default_block { background-color: #808080; opacity: 0.5; }
+.scheduler_default_main:focus { outline: none; }
+.scheduler_default_cell_focus { outline: red 2px solid; z-index: 100; opacity: 0.5; }
+.scheduler_default_shadow_invalid .scheduler_default_shadow_inner { outline: red 2px solid; z-index: 100; opacity: 0.5; }
+.scheduler_default_sorticon { opacity: 0.2;background-position: center center; background-repeat: no-repeat; cursor: pointer; }
+.scheduler_default_sorticon.scheduler_default_sorticon_asc { background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBvbHlnb24gcG9pbnRzPSI1IDEuNSwgMTAgMTAsIDAgMTAiLz48L3N2Zz4='); }
+.scheduler_default_sorticon.scheduler_default_sorticon_desc { background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBvbHlnb24gcG9pbnRzPSI1IDguNSwgMCAwLCAxMCAwIi8+PC9zdmc+'); }
+.scheduler_default_sorticon.scheduler_default_sorticon_active { opacity: 1; }
+.scheduler_default_loading { background-color: orange; color: white; padding: 2px; }
+
+/*Preferences area style*/
+.Prefcontainer {
+  display: grid;
+  width: 100%;
+  
+
+  grid-template-areas: "ShiftsArea FormArea";
+  grid-template-columns: 31.5% 67.5%;
+  
+}
+.container > div {
+  border: 1px dashed #888;
+}
+
+.ShiftsArea {
+  text-align: center;
+  padding: 10px;
+  grid-area: ShiftsArea;
+}
+.FormArea {
+  padding: 10px;
+  overflow: auto;
+  grid-area: FormArea;
+}
+
+/*form styling*/
+
+.PrefFormInput {
+  width: 100%;
+  padding: 5px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}

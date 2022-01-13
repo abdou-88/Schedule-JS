@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Catalent Scheduler</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/Tabs.css">
+
+    
+    <script src="js/daypilot-all.min.js"></script>
+    <script src="data/ScheduleData.js"></script>
+  </head>
+
+
+  <body>
+  
+    <div class="tab-wrap">
+
+      <button type="button" id="previous" >Previous</button>
+    
+    <button type="button" id="today" >Today</button>
+    
+    <button type="button" id="next" >Next</button>
+
+    <div id="dp" ></div>
+    <script src="js/CatalentLogic.js"></script>
+   
+    <button type="button" id="btnSave" onclick="Saveschedule(dp.events.list, dp.resources);">Save</button>
+    
+    </div>
+    
+    
+    
+
+  </body>
+</html>
